@@ -1,2 +1,2 @@
 # GroupGPT
-Use GPT with your frinds, co-workers, any member you want!
+Use GPT with your friends, co-workers, any member you want!

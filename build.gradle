@@ -33,11 +33,14 @@ dependencies {
 	implementation 'nz.net.ultraq.thymeleaf:thymeleaf-layout-dialect'
 
 	developmentOnly 'org.springframework.boot:spring-boot-devtools'
-	testImplementation 'org.springframework.boot:spring-boot-starter-test'
 
 	compileOnly 'org.projectlombok:lombok'
 	annotationProcessor 'org.projectlombok:lombok'
 	runtimeOnly 'com.h2database:h2'
+
+	implementation('io.github.hamawhitegg:langchain-core:0.2.0') {
+		exclude group: 'org.slf4j', module: 'slf4j-reload4j'
+	}
 }
 
 tasks.named('test') {

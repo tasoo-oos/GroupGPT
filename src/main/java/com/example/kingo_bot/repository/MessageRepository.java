@@ -13,8 +13,5 @@ public interface MessageRepository extends JpaRepository<Message, Long>{
 
     Optional<Message> findById(Long Id);
     List<Message> findAll();
-    @Query("SELECT m FROM Message m WHERE m.timestamp > :timestamp")
-    List<Message> findMessagesAfterTimestamp(@Param("timestamp") Long timestamp);
-
-    List<Message> findTop100ByTimestampBeforeOrderByTimestampDesc(Long lastReceivedTimestamp);
+    List<Message> findTop10ByTimestampBeforeOrderByTimestampDesc(Long lastReceivedTimestamp);
 }

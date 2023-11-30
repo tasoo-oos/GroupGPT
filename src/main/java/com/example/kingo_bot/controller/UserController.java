@@ -31,7 +31,7 @@ public class UserController {
 
     @PostMapping("/signup")
     public String signup(@Valid UserRequest userRequest, BindingResult bindingResult) {
-            if (bindingResult.hasErrors()) {
+        if (bindingResult.hasErrors()) {
             return "signup_form";
         }
 

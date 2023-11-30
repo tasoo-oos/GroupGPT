@@ -10,6 +10,7 @@ import lombok.Setter;
 @AllArgsConstructor
 @Builder
 public class MessageResponse {
+    Long id;
     private String name;
     private String content;
     private long timestamp;

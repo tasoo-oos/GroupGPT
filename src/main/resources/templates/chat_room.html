@@ -5,7 +5,7 @@
 <head>
     <title>채팅방</title>
     <script src="https://cdn.jsdelivr.net/npm/@stomp/stompjs@7.0.0/bundles/stomp.umd.min.js"></script>
-    <script src="/chat.js"></script>
+    <script type="module" src="/chat.js"></script>
 </head>
 <body layout:fragment="content">
 <noscript>
@@ -14,6 +14,7 @@
         Javascript and reload this page!</h2>
 </noscript>
 <div id="main-content" class="container">
+    <input type="button" class="w-100" id="get_previous" value="이전 채팅 내용 불러오기">
     <div class="row">
         <div class="col-md-12">
             <table id="conversation" class="table table-striped">
@@ -32,6 +33,7 @@
             <div class="row">
                 <!-- Textarea taking maximum available space -->
                 <div class="col">
+                    <label for="content"></label>
                     <textarea id="content" class="form-control" placeholder="Your message here..." required></textarea>
                 </div>
                 <!-- Button occupying its own space -->
@@ -42,5 +44,6 @@
         </form>
     </div>
 </div>
+
 </body>
 </html>

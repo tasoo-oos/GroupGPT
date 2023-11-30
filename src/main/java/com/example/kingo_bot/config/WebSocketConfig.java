@@ -26,7 +26,7 @@ public class WebSocketConfig implements WebSocketMessageBrokerConfigurer {
 }
 
 /*
-todo
+to do
 대화를 따라가다가 GPT가 나와야 할 법한 타이밍에 나오도록 하기 -> agent 느낌, 사람 C인 것처럼
 1대다 대화하는 것
 컴에듀니온 신청
